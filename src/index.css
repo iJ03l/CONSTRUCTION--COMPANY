@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  border-radius:0 !important;
+}
+button {
+  border-radius: 0 !important;
+} 
+
+.nav-link {
+  @apply mx-1 md:border-0 border-b-2 px-6 py-4 font-semibold text-sm uppercase hover:bg-green-600 hover:text-white hover:rounded-lg hover:shadow-lg transition ease-in-out;
+}
+
+.active {
+  @apply text-white bg-green-600 rounded-lg ;
+}
+
+#image-div, #escape {
+  mask-image: linear-gradient(#000, rgba(0,0,0,-1));
+}
+
+@media (min-width: 1024px) {
+    #image-div {
+        mask-image: none;
+    }
+}
+
+@media screen and (min-width: 763px)  {
+  #nav-dropdown {
+    display: none;
+  }
+}
+@media (max-width: 1217px) {
+  #show {
+    display: none;
+  }
+}
+
+#image-set {
+background:
+        /* top, transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        /* bottom, image */
+        url(../src/assets/images/construction-site.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+#image-set1 {
+background:
+        /* top, transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        /* bottom, image */
+        url(../src/assets/images/bg-image.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+#image-set2 {
+background:
+        /* top, transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        /* bottom, image */
+        url(../src/assets/images/construction-bg.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
