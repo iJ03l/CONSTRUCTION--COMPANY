@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
 import construction1 from "../assets/images/construction-image-null.jpg";
-import icon1 from "../assets/images/ico-1.png";
-import icon2 from "../assets/images/ico-3.png";
-import icon3 from "../assets/images/ico-2.png";
+import icon1 from "../assets/images/ico1.png";
+import icon2 from "../assets/images/ico3.png";
+import icon3 from "../assets/images/ico2.png";
 import TypeWriterEffect from "react-typewriter-effect";
 
 function About() {
@@ -129,4 +129,4 @@ function About() {
   );
 }
 
-export default About
+export default About;
